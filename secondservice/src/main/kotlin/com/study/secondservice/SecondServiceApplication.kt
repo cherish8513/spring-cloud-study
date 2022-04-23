@@ -1,11 +1,11 @@
-package com.study.firstservice
+package com.study.secondservice
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class FirstserviceApplication
+class SecondServiceApplication
 
 fun main(args: Array<String>) {
-    runApplication<FirstserviceApplication>(*args)
+    runApplication<SecondServiceApplication>(*args)
 }

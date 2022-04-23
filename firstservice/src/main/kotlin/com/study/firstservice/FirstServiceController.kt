@@ -1,6 +1,7 @@
 package com.study.firstservice
 
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.RequestHeader
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
@@ -11,4 +12,7 @@ class FirstServiceController {
     fun welcome() : String{
         return "welcome first"
     }
+
+    @GetMapping("/message")
+    fun message(@RequestHeader("first-request") header : String) : String = header
 }

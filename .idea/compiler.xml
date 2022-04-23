@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel>
+      <module name="gateway-api-service" target="11" />
+      <module name="gateway-api-service.main" target="11" />
+      <module name="gateway-api-service.test" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

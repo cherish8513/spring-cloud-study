@@ -15,4 +15,7 @@ class FirstServiceController {
 
     @GetMapping("/message")
     fun message(@RequestHeader("first-request") header : String) : String = header
+
+    @GetMapping("/check")
+    fun check() : String = "Hi, there. this is a message from First Service"
 }
